@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import update from 'react-addons-update';
-import quizQuestions from './api/quizQuestions';
-import Quiz from './components/Quiz';
-import Result from './components/Result';
-import got from './images/got.jpg';
-import logo from './svg/logo.svg';
-import './App.css';
+import quizQuestions from '../api/quizQuestions';
+import Quiz from './Quiz';
+import Result from './Result';
+// import got from './images/got.jpg';
+// import logo from './svg/logo.svg';
+// import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -134,12 +134,12 @@ class App extends Component {
     return ( 
       <div className = "App">
         <div className = "App-header">
-          <img src = { logo }
+          {/* <img src = { logo }
             className = "App-logo"
-            alt = "logo" />
-          <img src = { got }
+            alt = "logo" /> */}
+          {/* <img src = {got}
             className = "App-img"
-            alt = "img"/>
+            alt = "img"/> */}
         </div> 
       { this.state.result ? this.renderResult() : this.renderQuiz() } 
       </div>
