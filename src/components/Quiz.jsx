@@ -39,16 +39,6 @@ function Quiz(props) {
       </div>
     </ReactCSSTransitionGroup>
   );
-
-  return (
-    <div className="quiz">
-      <QuestionCount counter={props.questionId} total={props.questionTotal} />
-      <Question content={props.question} />
-      <ul className="answerOptions">
-        {props.answerOptions.map(renderAnswerOptions)}
-      </ul>
-    </div>
-  );
 }
 
 Quiz.propTypes = {
